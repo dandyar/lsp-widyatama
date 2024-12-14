@@ -2,8 +2,14 @@ package dandyar.github.io;
 
 import java.util.Scanner;
 
+/**
+ * Program CLI untuk menghitung luas segitiga
+ */
 public class SegitigaApp
 {
+    /**
+     * Prosedur untuk menjalankan program
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

@@ -3,12 +3,18 @@ package dandyar.github.io;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Program CLI untuk mengelola record mahasiswa
+ */
 public class MahasiswaApp
 {
     private static final ArrayList<Mahasiswa> mahasiswaList = new ArrayList<>();
 
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Prosedur untuk menjalankan program
+     */
     public static void main(String[] args) {
         while (true) {
 
@@ -85,6 +91,7 @@ public class MahasiswaApp
             System.out.println("Mahasiswa dengan NPM " + npm + " tidak ditemukan.");
         }
     }
+
 
     private static void tampilkanMahasiswa() {
         System.out.println("===== Daftar Mahasiswa =====");

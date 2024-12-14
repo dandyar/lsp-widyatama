@@ -1,5 +1,10 @@
 package dandyar.github.io;
 
+
+/**
+ * Struktur bangun datar segitiga. Kelas ini tidak memiliki fungsi setter karena,
+ * alas dan tinggi segitiga bersifat Immutable.
+ */
 public class Segitiga extends BangunDatar {
 
     private double alas;
