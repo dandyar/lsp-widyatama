@@ -1,5 +1,5 @@
 ## Note
-Project ini menggunakan JDK 21 dan WildFly 33.0.1.Final
+Project ini menggunakan Maven 3.9.6, JDK 21 dan WildFly 33.0.1.Final
 
 ## User Interface
 
