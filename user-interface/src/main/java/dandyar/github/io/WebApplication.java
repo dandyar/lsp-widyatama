@@ -1,17 +1,15 @@
 package dandyar.github.io;
 
-import com.vaadin.cdi.annotation.CdiComponent;
+import com.vaadin.flow.component.AttachEvent;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H2;
-import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
-import jakarta.annotation.PostConstruct;
 
 
 /**
@@ -19,11 +17,10 @@ import jakarta.annotation.PostConstruct;
  * Baca lebih lanjut tentang Vaadin <a href="https://vaadin.com">https://vaadin.com</a>
  */
 @Route("")
-@CdiComponent
 public class WebApplication extends Div {
 
-    @PostConstruct
-    public void init() {
+    @Override
+    protected void onAttach(AttachEvent attachEvent) {
 
         // Menambahkan CSS inline untuk form input data
         getStyle().set("width", "100%");
